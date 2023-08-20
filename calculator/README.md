@@ -13,5 +13,5 @@ To run it make sure elixir is installed on your system
 Example
 ```bash
 ./calculator.exs divide 4 2
-The result of dividing 4 by 2 is 2.0
 ```
+```The result of dividing 4 by 2 is 2.0```
