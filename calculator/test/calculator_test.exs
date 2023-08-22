@@ -24,5 +24,9 @@ defmodule CalculatorTest do
     test "divide first number by second number" do
       assert Calculator.divide(4, 2) == 2.0
     end
+
+    test "division by zero is not allowed" do
+      assert Calculator.divide(1, 0) == {:error, "Division by zero is not allowed"}
+    end
   end
 end

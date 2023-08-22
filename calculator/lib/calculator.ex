@@ -49,7 +49,13 @@ defmodule Calculator do
       2.0
   """
   def divide(num1, num2) do
-    (num1 / num2)
-    |> Float.round(1)
+    case num2 do
+      0 ->
+        {:error, "Division by zero is not allowed"}
+
+      _ ->
+        (num1 / num2)
+        |> Float.round(1)
+    end
   end
 end
