@@ -1,17 +1,24 @@
-### Calculator
+# Calculator
 
-Basic calculator function such as addition, substraction, multiplication, division.
+**Simple Calculator on elixir script**
 
-I'm using elixir 1.15.4
 
-To run it make sure elixir is installed on your system
-
-```chmod +x calculator.exs``` to make it executable.
-
-`usage ./calculator.exs [operation] [x] [y]`
-
-Example
-```bash
-./calculator.exs divide 4 2
+Run deps.get using mix
+```sh
+mix deps.get
 ```
-```The result of dividing 4 by 2 is 2.0```
+
+Generate docs
+```sh
+mix docs
+```
+
+Open interactive elixir
+```sh
+iex -S mix
+```
+
+```
+iex(1)> Calculator.sum(2,5)
+7
+```
